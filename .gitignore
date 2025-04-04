@@ -1,0 +1,8 @@
+# .gitignore の例
+
+# Windows系で自動生成されがちなファイル（任意）
+*.DS_Store
+*.pyc
+
+# 仮想環境フォルダはGitに含めない
+venv/

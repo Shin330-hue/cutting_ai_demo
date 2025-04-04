@@ -131,7 +131,7 @@ import google.generativeai as genai
 import os
 
 # Gemini API設定
-API_KEY = "あなたのGemini APIキー"  # 環境変数から取得する方が安全です
+API_KEY = GEMINI_API_KEY  # 環境変数から取得する方が安全です
 genai.configure(api_key=API_KEY)
 
 # モデル設定

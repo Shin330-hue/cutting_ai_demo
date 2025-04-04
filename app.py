@@ -4,7 +4,7 @@ import pandas as pd
 # CSV読み込み
 @st.cache_data
 def load_knowledge():
-    df = pd.read_csv("data//knowledge.csv")
+    df = pd.read_csv("knowledge.csv")
     return df
 
 def main():

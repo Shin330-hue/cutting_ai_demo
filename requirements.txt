@@ -1,7 +1,9 @@
 streamlit
 pandas
 scikit-learn
-sentence-transformers
+sentence-transformers==2.2.2
+transformers==4.30.0
+torch==2.0.1
 google-generativeai
 python-dotenv
 numpy

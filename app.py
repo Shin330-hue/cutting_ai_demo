@@ -6,7 +6,7 @@ import streamlit as st
 st.set_page_config(page_title="切削加工アドバイザー", layout="wide")
 
 import pandas as pd
-#from sentence_transformers import SentenceTransformer
+from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import google.generativeai as genai
@@ -53,10 +53,10 @@ character_prompts = {
     """
 }
 
-## モデルとデータのロード
-#@st.cache_resource
-#def load_model():
-#    return SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
+# モデルとデータのロード
+@st.cache_resource
+def load_model():
+    return SentenceTransformer('sonoisa/sentence-bert-base-ja-mean-tokens')
 
 @st.cache_data
 def load_knowledge():
